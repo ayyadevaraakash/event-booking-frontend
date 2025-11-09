@@ -39,6 +39,7 @@ function Navbar() {
           </>
         ) : (
           <>
+            {/* Organizer Feature */}
             {role === "ORGANIZER" && (
               <button
                 className="btn btn-light btn-sm text-primary fw-semibold"
@@ -47,9 +48,23 @@ function Navbar() {
                 + Create Event
               </button>
             )}
+
+            {/* User Feature */}
+            {role === "USER" && (
+              <button
+                className="btn btn-light btn-sm text-primary fw-semibold"
+                onClick={() => navigate("/my-bookings")}
+              >
+                My Bookings
+              </button>
+            )}
+
+            {/* Role Label */}
             <span className="text-white small me-2">
               {role === "ORGANIZER" ? "Organizer" : "User"}
             </span>
+
+            {/* Logout */}
             <button
               className="btn btn-outline-light btn-sm"
               onClick={handleLogout}

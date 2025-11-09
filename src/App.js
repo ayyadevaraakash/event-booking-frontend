@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import EventList from "./components/EventList";
 import CreateEvent from "./components/CreateEvent";
+import MyBookings from "./components/MyBookings";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/create-event" element={<CreateEvent />} />
+        <Route path="/my-bookings" element={<MyBookings />} />
       </Routes>
     </Router>
   );
