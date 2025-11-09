@@ -5,6 +5,7 @@ import Register from "./components/Register";
 import EventList from "./components/EventList";
 import CreateEvent from "./components/CreateEvent";
 import MyBookings from "./components/MyBookings";
+import AdminDashboard from "./components/AdminDashboard";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/create-event" element={<CreateEvent />} />
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/my-bookings" element={<MyBookings />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );

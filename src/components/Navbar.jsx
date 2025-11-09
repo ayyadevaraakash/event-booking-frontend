@@ -59,6 +59,16 @@ function Navbar() {
               </button>
             )}
 
+            {role === "ADMIN" && (
+              <button
+                className="btn btn-light btn-sm text-primary fw-semibold"
+                onClick={() => navigate("/admin")}
+              >
+                Admin Dashboard
+              </button>
+            )}
+
+
             {/* Role Label */}
             <span className="text-white small me-2">
               {role === "ORGANIZER" ? "Organizer" : "User"}
